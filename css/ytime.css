@@ -1,0 +1,20 @@
+/*tr:nth-child(even) {*/
+    /*background-color: #d9edf7;*/
+/*}*/
+
+.ytime-table {
+    border: 1px solid;
+    /*border-color: darkred;*/
+    border-radius: 5px;
+    /*background-color: #afd9ee;*/
+}
+
+.ytime-thead {
+    background-color: #337ab7;
+    color: white;
+}
+
+.ytime-tfoot {
+    background-color: #337ab7;
+    color: white;
+}

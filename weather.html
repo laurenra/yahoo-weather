@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Get Weather</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/ytime.css" rel="stylesheet">
+    <link href="js/bootstrap.min.js" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="weather.js"></script>
+</head>
+<body>
+<div class="container" role="main">
+    <div class="page-header">
+        <!--<h3 class="text-muted">Time Clock</h3>-->
+        <h1 class="text-primary">Weather</h1>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12">
+            <form id="location" class="navbar-form navbar-left">
+                <div class="form-group">
+                    <input id="city" type="text" placeholder="city" class="form-control">
+                </div>
+                <div class="form-group">
+                    <input id="state" type="text" placeholder="state/country" class="form-control">
+                </div>
+                <button id="getLocBtn" type="submit" class="btn btn-success">Get Weather</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="panel panel-primary">
+        <table class="table">
+            <thead class="ytime-thead">
+            <th><h4 id="weatherLocation"></h4></th>
+            <th><h4>High</h4></th>
+            <th><h4>Low</h4></th>
+            <th><h4>Description</h4></th>
+            <th><h4></h4></th>
+            </thead>
+            <tbody id="forecastTable">
+            <!--<tr>-->
+                <!--<td><h4>Mon, 22 Feb 2017</h4></td>-->
+                <!--<td><h4>4&deg;</h4></td>-->
+                <!--<td><h4>-16&deg;</h4></td>-->
+                <!--<td><h4>Snow Showers</h4></td>-->
+                <!--<td><h4></h4></td>-->
+            <!--</tr>-->
+            </tbody>
+            <tfoot class="ytime-tfoot">
+            <tr>
+                <td><h4></h4></td>
+                <td><h4></h4></td>
+                <td><h4></h4></td>
+                <td><h4></h4></td>
+                <td><h4></h4></td>
+            </tr>
+            </tfoot>
+
+        </table>
+
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12">
+            <h4 id="jsonTitle"></h4>
+            <p><pre id="jsonData"></pre></p>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>© 2017 Brigham Young University</p>
+    </footer>
+
+</div>
+
+</body>
+</html>
